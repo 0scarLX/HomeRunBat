@@ -1,6 +1,5 @@
 package net.clustlight.spigot.homerunbat.items;
 
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -30,14 +29,17 @@ public class Level3 {
         return item;
     }
 
-    public static void setRecipe() {
-        ShapedRecipe sr = new ShapedRecipe(NamespacedKey.minecraft("home_run_bat_lv3"), getItem());
-        sr.shape("III",
+    public static ShapedRecipe getRecipe() {
+        ShapedRecipe recipe = new ShapedRecipe(NamespacedKey.minecraft("home_run_bat_lv3"), getItem());
+        recipe.shape(
+                "III",
                 "ISI",
-                " S ");
-        sr.setIngredient('S', new RecipeChoice.ExactChoice(Level2.getItem()));
-        sr.setIngredient('I', Material.IRON_INGOT);
-        Bukkit.getServer().addRecipe(sr);
+                " S "
+        );
+        recipe.setIngredient('S', new RecipeChoice.ExactChoice(Level2.getItem()));
+        recipe.setIngredient('I', Material.IRON_INGOT);
+
+        return recipe;
     }
 
 }
