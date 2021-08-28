@@ -20,7 +20,7 @@ public class Level1 {
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(ChatColor.GOLD + "ホームランバット " + ChatColor.BOLD + ChatColor.GREEN + "Lv.1");
         List<String> lore = new ArrayList<>();
-        lore.add(ChatColor.LIGHT_PURPLE+"ホームランするバットです");
+        lore.add(ChatColor.LIGHT_PURPLE + "ホームランするバットです");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.KNOCKBACK, 4, true);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);

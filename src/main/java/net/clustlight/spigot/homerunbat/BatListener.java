@@ -23,11 +23,11 @@ public class BatListener implements Listener {
     );
 
     @EventHandler
-    public void onDamage(EntityDamageByEntityEvent event){
+    public void onDamage(EntityDamageByEntityEvent event) {
         Entity entity = event.getDamager();
-        if(entity instanceof Player){
+        if (entity instanceof Player) {
             Player player = (Player) entity;
-            if(bats.contains(player.getInventory().getItemInMainHand())){
+            if (bats.contains(player.getInventory().getItemInMainHand())) {
                 event.setDamage(0);
             }
         }

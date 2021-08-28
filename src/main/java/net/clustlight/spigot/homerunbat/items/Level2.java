@@ -21,7 +21,7 @@ public class Level2 {
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(ChatColor.GOLD + "ホームランバット " + ChatColor.BOLD + ChatColor.DARK_AQUA + "Lv.2");
         List<String> lore = new ArrayList<>();
-        lore.add(ChatColor.LIGHT_PURPLE+"ホームランするバットです");
+        lore.add(ChatColor.LIGHT_PURPLE + "ホームランするバットです");
         meta.setLore(lore);
         meta.addEnchant(Enchantment.KNOCKBACK, 8, true);
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -29,7 +29,6 @@ public class Level2 {
 
         return item;
     }
-
 
     public static void setRecipe() {
         ShapedRecipe sr = new ShapedRecipe(NamespacedKey.minecraft("home_run_bat_lv2"), getItem());
