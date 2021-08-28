@@ -1,0 +1,6 @@
+name: HomeRunBat
+version: '${project.version}'
+main: net.clustlight.spigot.homerunbat.HomeRunBat
+api-version: 1.17
+authors: [ 0scarLX ]
+description: HomeRunBat
