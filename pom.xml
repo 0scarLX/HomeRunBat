@@ -6,7 +6,7 @@
 
     <groupId>net.clustlight.spigot</groupId>
     <artifactId>HomeRunBat</artifactId>
-    <version>0.5-Dev</version>
+    <version>1.0-Stable</version>
     <packaging>jar</packaging>
 
     <name>HomeRunBat</name>
